@@ -45,3 +45,5 @@ $ git checkout dev
 合并分支并做记录：`git merge --no-ff -m "merge with no-ff" dev`
 
 存放现场：`git stash`
+
+fix bug
