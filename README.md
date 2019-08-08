@@ -40,4 +40,4 @@ $ git checkout dev
 
 删除分支：`git branch -d <name>`
 
-> > > > > > > feature
+查看分支合并图：`git log --graph`
