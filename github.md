@@ -1,9 +1,22 @@
-# mydiary
+# **github 使用总结**
 
-Introduce what I do every day
-<<<<<<< HEAD
+## _个人 github 学习及使用总结性文档_
 
-分支创建：
+---
+
+###远程库：
+
+添加远程仓库
+首先先创建 github 仓库<br>
+然后把本地的仓库推送到远程仓库中
+
+1.关联仓库 `git remote add origin <链接>`
+
+2.推送仓库 `git push -u origin master`
+
+---
+
+###分支创建：
 
 ```
 $git checkout -b dev
@@ -28,7 +41,7 @@ $ git checkout dev
 
 ---
 
-##总结
+###总结
 查看分支：`git branch`
 
 创建分支：`git branch <name>`
@@ -45,8 +58,12 @@ $ git checkout dev
 
 合并分支并做记录：`git merge --no-ff -m "merge with no-ff" dev`
 
+在你的分支<br>
 存放现场：`git stash`
+回来的时候<br>
+查看存放列表：`git stash list`
 
-fix bug
-=======
->>>>>>> dev
+> 恢复：`git stash apply`
+> 删除`git stash drop`
+
+恢复和删除同时操作：`git stash pop`
