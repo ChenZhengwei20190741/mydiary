@@ -41,3 +41,5 @@ $ git checkout dev
 删除分支：`git branch -d <name>`
 
 查看分支合并图：`git log --graph`
+
+合并分支并做记录：`git merge --no-ff -m "merge with no-ff" dev`
