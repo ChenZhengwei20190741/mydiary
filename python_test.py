@@ -26,13 +26,21 @@
 # }
 
 # print dict.values()
-import calendar
-import time
+# import time
+# import calendar
+# content = dir(calendar)
+# content1 = dir(time)
+# print content, "\n"
+# print content1
 
-tick = time.localtime(time.time())
-localtime = time.asctime(tick)
-print localtime
+# str = raw_input("请输入：")
+# print "你输入的是：", str
 
+# sttr = input("请输入：")
+# print "你输入的是：", sttr
 
-cal = calendar.month(2019, 8)
-print "以下输出2019年8月份日历：\n", cal
+import os
+
+os.chdir('/home/chenzhengwei/esp')
+
+print(os.getcwd())

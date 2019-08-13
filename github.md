@@ -67,3 +67,36 @@ $ git checkout dev
 > 删除`git stash drop`
 
 恢复和删除同时操作：`git stash pop`
+
+---
+
+### 远程库操作
+
+查看远程库信息`git remote -v`
+
+本地新建的分支如果不推送到远程，对其他人就是不可见的；
+
+从本地推送分支，使用`git push origin branch-name，`如果推送失败，先用`git pull`抓取远程的新提交；
+
+在本地创建和远程分支对应的分支，使用`git checkout -b branch-name origin/branch-name`，本地和远程分支的名称最好一致；
+
+建立本地分支和远程分支的关联，使用`git branch --set-upstream branch-name origin/branch-name`；
+
+从远程抓取分支，使用`git pull`，如果有冲突，要先处理冲突。
+
+---
+
+### 标签管理
+
+设置当前 HEAD：`git tag <tagname>`
+指定某个 commit：`git tag v1.0 xxxxxx`
+指定标签信息：`git tag -a <tagname> -m "message"`
+查看标签：`git tag`
+<br>
+命令`git push origin <tagname>`可以推送一个本地标签；
+
+命令`git push origin --tags`可以推送全部未推送过的本地标签；
+
+命令`git tag -d <tagname>`可以删除一个本地标签；
+
+命令`git push origin :refs/tags/<tagname>`可以删除一个远程标签。
