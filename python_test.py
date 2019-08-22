@@ -21,9 +21,10 @@
 
 # list.reverse()
 # print list
-# dict = {
-#     'Name': 'Zara', "Age": 7, 'class': "firest"
-# }
+dict = {
+    'Name': 'Zara', "Age": 7, 'class': "firest"
+}
+
 
 # print dict.values()
 # import time
@@ -39,8 +40,15 @@
 # sttr = input("请输入：")
 # print "你输入的是：", sttr
 
-import os
+# import os
 
-os.chdir('/home/chenzhengwei/esp')
+# os.chdir('/home/chenzhengwei/esp')
 
-print(os.getcwd())
+# print(os.getcwd())
+
+dict1 = {
+    'Name': 'pwm', 'Age': 8, 'class': "firest"
+}
+
+dict.update(dict1)
+print dict
